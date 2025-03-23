@@ -19,6 +19,6 @@ app.get("/api/cars", async (req, res, next) => {
 });
 
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, '0.0.0.0', () => {
   console.log("Server running in port: ", process.env.PORT);
 });
